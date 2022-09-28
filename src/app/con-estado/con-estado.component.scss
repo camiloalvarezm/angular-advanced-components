@@ -1,0 +1,10 @@
+.columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .column {
+        display: flex;
+        flex-flow: column nowrap;
+        border: 1px solid gray;
+    }
+}

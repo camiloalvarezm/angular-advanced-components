@@ -1,0 +1,6 @@
+<div>
+    <p>{{producto.titulo}}</p>
+    <p>{{producto.texto}}</p>
+    <p>{{producto.imagen}}</p>
+    <button (click)="comprar()" [disabled]="isItemDisabled()">{{accionComprar}}</button>
+</div>

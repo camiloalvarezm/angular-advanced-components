@@ -1,0 +1,15 @@
+<div class="container">
+    <section class="section">
+        <h1 class="title">PRODUCTS</h1>
+        <div class="columns">
+            <div class="column" *ngFor="let item of modeloTienda.tiendaItems">
+                <app-sin-estado [producto]="item" (productoSeleccionado)="seleccionarItem($event)"></app-sin-estado>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Items Comprados</h2>
+        <li *ngFor="let item of itemsComprados">{{item.titulo}} por ${{item.precio}}</li>
+    </section>
+</div>
